@@ -1,6 +1,6 @@
 ---
 
-## 🐍 Archivo 2: `main.py` (Código corregido)
+## 🐍 Archivo 2: `main.py`
 
 ```python
 import os
