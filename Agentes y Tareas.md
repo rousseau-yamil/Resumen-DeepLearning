@@ -1,4 +1,5 @@
 ## Agentes
+´´´´
 planner = Agent(
     role="Content Planner",
     goal="Plan engaging and factually accurate content on {topic}",
@@ -12,7 +13,8 @@ planner = Agent(
     allow_delegation=False,
 	verbose=True
 )
-
+´´´´
+´´´´
 writer = Agent(
     role="Content Writer",
     goal="Write insightful and factually accurate "
@@ -34,7 +36,7 @@ writer = Agent(
     allow_delegation=False,
     verbose=True
 )
-
+´´´´
 editor = Agent(
     role="Editor",
     goal="Edit a given blog post to align with "
