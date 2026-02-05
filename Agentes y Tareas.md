@@ -100,3 +100,5 @@ result = crew.kickoff(inputs={"topic": "Artificial Intelligence"})
 print("\n\n########################")
 print("## RESULTADO FINAL ##")
 print(result)
+
+
