@@ -97,6 +97,48 @@ from crewai_tools import SerperDevTool, \
                          ScrapeWebsiteTool, \
                          WebsiteSearchTool
 ```
+###  crewai_tools
+SerperDevTool:diseñada para realizar una búsqueda semántica de una consulta específica a partir del contenido de un texto a través de internet. Utiliza el serper.dev API para obtener y mostrar los resultados de búsqueda más relevantes basándose en la consulta proporcionada por el usuario.
+Parametros:
+
+search_url: El endpoint de URL para la API de búsqueda. (El valor por defecto es https://google.serper.dev/search)
+país: Opcional. Especifica el país para los resultados de búsqueda.
+ubicación: Opcional. Especifica la ubicación de los resultados de búsqueda.
+Lugar: Opcional. Especifica la ubicación de los resultados de búsqueda.
+n_results: Número de resultados de búsqueda por devolver. El valor por defecto es 10.
+```
+from crewai_tools import SerperDevTool
+
+tool = SerperDevTool(
+    search_url="https://google.serper.dev/scholar",
+    n_results=2,
+)
+
+print(tool.run(search_query="ChatGPT"))
+```
+
+ScrapeWebsiteTool: diseñada para extraer y leer el contenido de un sitio web específico. Es capaz de gestionar varios tipos de páginas web mediante solicitudes HTTP y análisis del contenido HTML recibido. Esta herramienta puede ser especialmente útil para tareas de web scraping, recopilación de datos o extracción de información específica de sitios web
+```
+from crewai_tools import ScrapeWebsiteTool
+
+# To enable scrapping any website it finds during it's execution
+tool = ScrapeWebsiteTool()
+
+# Initialize the tool with the website URL, 
+# so the agent can only scrap the content of the specified website
+tool = ScrapeWebsiteTool(website_url='https://www.example.com')
+
+# Extract the text from the site
+text = tool.run()
+print(text)
+```
+
+WebsiteSearchTool: permite realizar búsquedas semánticas en el contenido de páginas web específicas. No rastrea sitios web completos y no actualiza automáticamente el contenido almacenado
+
+
+HERRAMIENTAS DE LAS TAREAS SOBREESCRIBEN LAS HERRAMIENTAS DE LOS AGENTES
+Si el agente tiene 10 herramientas disponibles, y la tarea requiere solo 3. Solo podra usar las 3 que esten configuradas en la tarea.
+
 
 ### Possible Custom Tools
 - Load customer data
