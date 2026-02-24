@@ -40,3 +40,18 @@ Tareas mas pequeñas en agentes enfocados rinden mejor que agentes que tengan ta
         Limitar una serie de herramientas asignadas a un agente
 
 
+---------------------
+Elementos clave de las herramientas de agentes:
+Que hace una herramienta "Buena"
+- Que sea versatil
+- Que sea tolerante a fallos
+- Que implemente un almacenamiento en cache
+
+1 . Versatilidad
+<img width="861" height="307" alt="image" src="https://github.com/user-attachments/assets/84f8feb5-508e-4530-b0e5-82b8e5b3da95" />
+
+
+
+
+  
+
