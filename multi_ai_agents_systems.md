@@ -48,7 +48,12 @@ Que hace una herramienta "Buena"
 - Que implemente un almacenamiento en cache
 
 1 . Versatilidad
+
 <img width="861" height="307" alt="image" src="https://github.com/user-attachments/assets/84f8feb5-508e-4530-b0e5-82b8e5b3da95" />
+
+Una herramienta necesita  poder aceptar diferentes tipos de peticiones, la herramienta es la conexion entre las aplicaciones IA que tienen entradas borrosoas
+con el mundo exterior que tienen entradas fuertementes tipadas. Asique la herramienta debe ser lo suficientemente versatil para poder manejar las diferentes cosas que el LLM podria lanzarles.
+
 
 
 
